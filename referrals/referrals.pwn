@@ -41,8 +41,7 @@ public Referrals_OnDialogResponse(playerid, dialogid, response, listitem, inputt
           		INI_ParseFile(fileString, "OnReferredPlayerDataLoad", false, true, listitem);
 
             SendInfoMessage(playerid, "%s | Level: %i | Sati igre: %i",
-            referredPlayerInfo[listitem][rpName], referredPlayerInfo[listitem][rpLevel],
-            GetPlayHours(referredPlayerInfo[listitem][rpRegTime], referredPlayerInfo[listitem][rpLogTime]));
+            referredPlayerInfo[listitem][rpName], referredPlayerInfo[listitem][rpLevel], referredPlayerInfo[listitem][rpPlayHours]);
         }
         else
         {
